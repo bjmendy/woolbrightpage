@@ -1,0 +1,121 @@
+html,body {
+  font-family: Amiri;
+  height: 100%;
+  color: #fff;
+}
+
+body {
+  background:   url(https://images2.alphacoders.com/754/thumb-1920-754606.jpg)  center center / cover, #21065B;
+  background-repeat: repeat;
+  background-blend-mode: lighten;
+  animation: 5400ms blink infinite alternate ease;
+  animation-play-state: paused;
+}
+
+p {
+  font-family: helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 200%;
+}
+b {
+  color: #FF69B4;
+  font-weight: bold;
+}
+
+a {
+  color: #FF69B4;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 90px;
+    width: 100px;
+    border: 1px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/*instagram  */
+.fa-instagram {
+   background-color: #FF69B4;
+   color: white;
+}
+
+/*bandcamp */
+.fa-bandcamp {
+   background-color: #FF69B4;
+   color: white;
+}
+
+img {
+  border-radius: 10px;
+  border-color: #FF69B4;
+  border-width: 2px;
+}
+
+h3 {
+  letter-spacing: 2em;
+  font-family: Amiri;
+  height: 100%;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  display: block;
+  letter-spacing: .5em;
+  font-size: 5em;
+  margin-top: 3em;
+  text-shadow: 0 0 0 #dd6dfb, 0 0 0 #50d8ec, 0 0 #50d8ec, 0 0 #f6a3ef;
+  &:hover {
+    animation: 1s shadow ease alternate infinite;
+  }
+}
+
+
+@keyframes shadow {
+  from {
+   text-shadow: 0 0 0 #dd6dfb, 0 0 0 #50d8ec, 0 0 #50d8ec, 0 0 #f6a3ef;
+  }
+  to {
+   text-shadow: -125px 3px 2px #dd6dfb, 125px -30px 2px #50d8ec, 150px 14px 2px #FF6AD5, -55px 133px 2px #f6a3ef;
+  }
+}
+
+@keyframes blink {
+  from {
+    background-position: center center;
+  }
+  
+  to {
+    background-position: left top;
+  }
+}
+
+.container {
+  display: flex; /* or inline-flex */
+}
+
+.item {
+  order: 1; /* default is 0 */
+}
